@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  react-app:
+    build: .
+    ports:
+      - "3000:5173"
+    volumes:
+      - .:/app        # Synchronise ton code local avec le conteneur
+      - /app/node_modules # Empêche les conflits de node_modules entre host et container
+    environment:
+      - CHOKIDAR_USEPOLLING=true
