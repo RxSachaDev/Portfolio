@@ -1,10 +1,10 @@
-@font-face {
-  font-family: 'K2D';
-  src: url('./assets/font/K2D-Regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 body {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background-color: #191818;
+}
+
+h1 {
+  font-weight: 300;
 }

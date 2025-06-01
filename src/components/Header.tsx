@@ -1,4 +1,4 @@
-import './Header.css';
+import '../styles/Header.css';
 import { useState } from 'react';
 
 const Header: React.FC = () => {
@@ -10,7 +10,7 @@ const Header: React.FC = () => {
             <h1>RxSachaDev's Portfolio</h1>
             <div className="right-header">
                 <div className="container">
-                    <input type="checkbox" name="checkbox" id="checkbox" />
+                    <input type="checkbox" name="checkbox" id="checkbox" defaultChecked/>
                     <label htmlFor="checkbox" className="label"> </label>
                 </div>
                 <div className="color-picker">
