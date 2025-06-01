@@ -1,0 +1,10 @@
+.description-text {
+  padding : 20px 80px;
+  text-align: justify;
+  color: white;
+  background-color: #0F0F0F;
+}
+
+.description-text span {
+    color: #2BF07A;
+}

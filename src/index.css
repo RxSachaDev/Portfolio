@@ -3,8 +3,20 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #191818;
+  margin: 0;
 }
 
 h1 {
   font-weight: 300;
+  font-size: 3.75em;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 3em;
+}
+
+p {
+  font-size: 2.25em;
+  font-weight: 200;
 }
