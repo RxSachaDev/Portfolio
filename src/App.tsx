@@ -1,14 +1,14 @@
 import './App.css'
 import Header from './components/Header';
 import DescriptionText from './components/DescriptionText';
-import Project from './components/Project';
+import Projects from './components/Projects';
 
 function App() {
   return (
     <>
       <Header />
       <DescriptionText />
-      <Project />
+      <Projects />
     </>
   )
 }

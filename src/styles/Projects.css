@@ -1,0 +1,35 @@
+.projects {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    padding-top: 100px;
+}
+
+.projects-container > * {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+}
+
+.right-projects {
+    margin-top: 200px;
+}
+
+.left-projects > *:hover {
+    transform: rotate(10deg);
+}
+
+.right-projects > *:hover {
+    transform: rotate(-10deg);
+}
