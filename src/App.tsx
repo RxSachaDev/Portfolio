@@ -3,6 +3,7 @@ import Header from './components/Header';
 import DescriptionText from './components/DescriptionText';
 import Projects from './components/Projects';
 import Technologies from './components/Technologies';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <DescriptionText />
       <Projects />
       <Technologies />
+      <Contact />
     </>
   )
 }

@@ -34,3 +34,22 @@ p {
   font-size: 2.25em;
   font-weight: 200;
 }
+
+button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: white solid 3px;
+  padding: 10px 30px;
+  font-size: 2em;
+  transition: 0.2s all ease-in-out;
+}
+
+button:hover {
+  background-color: #2BF07A;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
