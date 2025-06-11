@@ -5,5 +5,5 @@
 }
 
 .description-text span {
-    color: #2BF07A;
+    color: var(--main-color);
 }

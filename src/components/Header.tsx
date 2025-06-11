@@ -1,9 +1,8 @@
 import '../styles/Header.css';
-import { useState } from 'react';
+import { useColorStore } from '../store/ColorStore';
 
 const Header: React.FC = () => {
-    const [colors, setColors] = useState(["#2BF07A", "#F22222", "#B044F7", "#2A5BFC", "#FFDD33"])
-    const [currentColor, setCurrentColor] = useState(colors[0]);
+    const { colors, currentColor, setCurrentColor } = useColorStore();
 
     return (
         <header>
@@ -18,7 +17,7 @@ const Header: React.FC = () => {
                         <div
                             key={index}
                             className="color-box"
-                            style={{ backgroundColor: color }}
+                            style={{ backgroundColor: color, border: color === currentColor ? '2px solid #fff' : undefined }}
                             onClick={() => setCurrentColor(color)}
                         ></div>
                     ))}
