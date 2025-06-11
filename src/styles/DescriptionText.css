@@ -1,7 +1,7 @@
 .description-text {
   padding : 40px 80px;
   text-align: justify;
-  background-color: #0F0F0F;
+  background-color: var(--second-bg);
 }
 
 .description-text span {

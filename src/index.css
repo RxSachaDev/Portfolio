@@ -1,4 +1,15 @@
-
+[data-theme="dark"] {
+  --main-bg: #191818;
+  --second-bg: #0F0F0F;
+  --third-bg: #222121;
+  --text-color: #fff;
+}
+[data-theme="light"] {
+  --main-bg: #fff;
+  --second-bg: #e0e0e0;
+  --third-bg: #d6d6d6;
+  --text-color: #191818;
+}
 
 * {
   font-family: 'Raleway', sans-serif;
@@ -6,8 +17,8 @@
 }
 
 body {
-    background-color: #191818;
-    color: white;
+    background-color: var(--main-bg);
+    color: var(--text-color);
 }
 
 h1 {
@@ -39,7 +50,7 @@ button {
   all: unset;
   box-sizing: border-box;
   cursor: pointer;
-  border: white solid 3px;
+  border: var(--text-color) solid 3px;
   padding: 10px 30px;
   font-size: 2em;
   transition: 0.2s all ease-in-out;
