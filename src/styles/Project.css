@@ -21,13 +21,14 @@
     gap: 10px;
 }
 
-.project .picture {
+.project img {
     display: flex;
     background-color: var(--main-color);
     width: 456px;
     aspect-ratio: 456/350;
     border-radius: 5px;
     margin-left: 20.5px;
+    object-fit: cover;
 }
 
 .project h3 {

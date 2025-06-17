@@ -7,12 +7,12 @@ const Projects: React.FC = () => {
             <h2>My projects</h2>
              <div className="projects-container">
                 <div className="left-projects">
-                    <Project />
-                    <Project />
+                    <Project title='Project' content='Texte de description pour expliquer le projet' year={2024} imageUrl='./assets/tree.jpg' language='Java'/>
+                    <Project title='Project' content='Texte de description pour expliquer le projet' year={2024} imageUrl='./assets/tree.jpg' language='Java'/>
                 </div>
                 <div className="right-projects">
-                    <Project />
-                    <Project />
+                    <Project title='Project' content='Texte de description pour expliquer le projet' year={2024} imageUrl='./assets/tree.jpg' language='Java'/>
+                    <Project title='Project' content='Texte de description pour expliquer le projet' year={2024} imageUrl='./assets/tree.jpg' language='Java'/>
                 </div>
              </div>
         </div>

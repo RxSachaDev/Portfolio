@@ -20,13 +20,14 @@
     flex-direction: column;
     align-items: center;
     gap: 200px;
+    cursor: pointer;
 }
 
 .right-projects {
     margin-top: 200px;
 }
 
-.left-projects > *:hover {
+.left-projects > .project:hover {
     transform: rotate(10deg);
 }
 
