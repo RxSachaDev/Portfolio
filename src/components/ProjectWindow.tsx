@@ -9,9 +9,10 @@ type ProjectWindowProps = {
     year: number;
     imageUrl: string;
     language: string;
+    technologies: string[];
 };
 
-const ProjectWindow: React.FC<ProjectWindowProps> = ({open, onClose, title, content, year, imageUrl, language}) => {
+const ProjectWindow: React.FC<ProjectWindowProps> = ({open, onClose, title, content, year, imageUrl, language, technologies}) => {
   if (!open) return null;  
   return (
     <div className="project-window">
@@ -23,6 +24,12 @@ const ProjectWindow: React.FC<ProjectWindowProps> = ({open, onClose, title, cont
                 <p>Langage(s) : {language}</p>
                 <p>{content}</p>
                 <h4>{year}</h4>
+                <p>Technologies & tools : </p>
+                <ul>
+                    {technologies?.map((tech, index) => (
+                        <li key={index}>{tech}</li>
+                    ))}
+                </ul>
             </div>
         </div>
     </div>

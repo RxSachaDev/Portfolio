@@ -9,6 +9,7 @@ import Experiences from './components/Experiences';
 import { useColorStore } from './store/ColorStore';
 import { useThemeStore } from './store/ThemeStore';
 import { useEffect } from 'react';
+import { IoIosDocument } from "react-icons/io";
 
 
 
@@ -29,6 +30,10 @@ function App() {
       <Technologies />
       <SoftSkills />
       <Contact />
+      <a href="/assets/cv.pdf" download className="cv-download-btn">
+          <IoIosDocument size={30} />
+          <span className="cv-text">Download CV</span>
+      </a>
     </div>
   )
 }

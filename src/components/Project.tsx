@@ -8,9 +8,10 @@ type ProjectProps = {
     year: number;
     imageUrl: string;
     language: string;
+    technologies: string[];
 };
 
-const Project: React.FC<ProjectProps> = ({ title, content, year, imageUrl, language }) => {
+const Project: React.FC<ProjectProps> = ({ title, content, year, imageUrl, language, technologies }) => {
     const [open, setOpen] = useState(false);
     return (
         <>
@@ -31,7 +32,8 @@ const Project: React.FC<ProjectProps> = ({ title, content, year, imageUrl, langu
                 content={content}
                 year={year}
                 imageUrl={imageUrl}
-                language={language}/>
+                language={language}
+                technologies={technologies}/>
         </>
         
     );

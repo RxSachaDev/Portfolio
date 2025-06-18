@@ -69,3 +69,54 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.cv-download-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--main-color, #222);
+  color: var(--main-bg, #fff);
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  text-decoration: none;
+  z-index: 1000;
+  transition: background 0.2s, color 0.2s, width 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  overflow: hidden;
+}
+
+.cv-download-btn .cv-text {
+  opacity: 0;
+  width: 0;
+  margin-left: 0;
+  transition:
+    opacity 0.2s 0.2s, /* délai pour l'opacité */
+    width 0.3s,
+    margin-left 0.3s;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.cv-download-btn:hover {
+  width: 200px;
+  background: var(--main-bg, #fff);
+  color: var(--main-color, #222);
+  border: 2px solid var(--main-color, #222);
+}
+
+.cv-download-btn:hover .cv-text {
+  opacity: 1;
+  width: auto;
+  margin-left: 10px;
+  transition:
+    opacity 0.2s 0s, /* pas de délai à l'ouverture */
+    width 0.3s,
+    margin-left 0.3s;
+  pointer-events: auto;
+}
