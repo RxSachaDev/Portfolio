@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Technologies from './components/Technologies';
 import Contact from './components/Contact';
 import SoftSkills from './components/SoftSkills';
+import Experiences from './components/Experiences';
 import { useColorStore } from './store/ColorStore';
 import { useThemeStore } from './store/ThemeStore';
 import { useEffect } from 'react';
@@ -23,6 +24,7 @@ function App() {
     <div style={{ "--main-color": currentColor } as React.CSSProperties} data-theme={theme}>
       <Header />
       <DescriptionText />
+      <Experiences />
       <Projects />
       <Technologies />
       <SoftSkills />
