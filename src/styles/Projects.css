@@ -1,5 +1,5 @@
 .projects {
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
 }
@@ -31,6 +31,6 @@
     transform: rotate(10deg);
 }
 
-.right-projects > *:hover {
+.right-projects > .project:hover {
     transform: rotate(-10deg);
 }

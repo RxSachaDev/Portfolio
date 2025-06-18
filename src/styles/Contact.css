@@ -1,12 +1,16 @@
 .contact {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .contact span {
     color: var(--main-color);
+}
+
+.contact .networks {
+    display: flex;
+    gap: 15px;
 }

@@ -46,4 +46,7 @@
     font-size: 2em;
     text-align: justify;
     color: #ABABAB;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
